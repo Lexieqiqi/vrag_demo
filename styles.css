@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem; 
+}
+
+.upload-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.upload-box {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #e9f5ff;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.upload-box:hover {
+    background-color: #d0eaff;
+}
+
+.upload-content {
+    text-align: center;
+}
+
+.plus-icon {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.upload-text {
+    font-size: 18px;
+    color: #007bff;
+    display: block;
+    margin-top: 10px;
+}
+
+.upload-box input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.query-section {
+    margin-bottom: 40px;
+}
+
+.query-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.query-section input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.query-section button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.query-section button:hover {
+    background-color: #0056b3;
+}
+
+.result-section {
+    margin-top: 40px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.result-grid video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Frame Query Demo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>视频内容查询</h1>
+
+        <!-- Video Upload Section -->
+        <div class="upload-section" id="uploadSection">
+            <div class="upload-box">
+                <div class="upload-content">
+                    <span class="plus-icon">+</span>
+                    <span class="upload-text">上传视频</span>
+                </div>
+                <input type="file" id="videoInput" accept="video/*" style="display: none;">
+            </div>
+        </div>
+
+        <!-- 上传进度条 -->
+        <div class="progress-container" id="progressContainer" style="display: none;">
+            <progress id="progressBar" value="0" max="100"></progress>
+            <span id="progressText">0%</span>
+        </div>
+
+        <!-- Query Input Section -->
+        <div class="query-section">
+            <h2>请输入查询内容</h2>
+            <input type="text" id="queryInput" placeholder="Enter your query here">
+            <button id="queryBtn">搜索</button>
+            <button id="voiceBtn">声音搜索</button>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-section">
+            <h2>查询结果</h2>
+            <div class="result-grid">
+                <video id="resultVideo1" controls></video>
+                <video id="resultVideo2" controls></video>
+                <video id="resultVideo3" controls></video>
+                <video id="resultVideo4" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
